@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+			font-family: arial,hervetical,sans-serif;
+			color: white;
+
+		}
+		.background{
+			background-image: url(boldo.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-blend-mode: darken;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: -1;
+			filter: blur(3px);
+		}
+		.container{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			width: 500px;
+			margin: 10vh auto;
+			background: transparent;
+			box-shadow: 0 0 15px rgb(255,25,255);
+			border-radius: 25px;
+		}
+		h2{
+			font-size: 30px;
+
+		}
+		form{
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			width: 85%;
+		}
+		.formitem{
+               display: flex;
+               width: 90%;
+               background: blue;
+               margin: 10px auto;
+               border-radius: 15px;
+               align-items: center;
+               border-bottom: 1px solid rgb(82,81,81);
+
+		}
+		.formitem:hover{
+			border: 1px solid rgb(82,81,81);
+
+		}
+		input{
+			background: transparent;
+			width: 80%;
+			height: 30px;
+			outline: none;
+			color: black;
+			border: none;
+			margin: aut;
+		}
+		span{
+			user-select: none;
+			margin: 5px;
+			color: white;
+			background: gray;
+			padding: 5px;
+			border-radius: 15px;
+		}
+		button[type="submit"]{
+			width: 250px;
+			font-size: 20px;
+			margin: 10px auto;
+			padding: 8px;
+			background: gray;
+			border: none;
+			color: white;
+		}
+		button[type="submit"]:hover{
+			background: #f9004d;	
+		}
+		p:first-of-type{
+			font-size: 18px;
+			margin: 0;	
+		}
+		.option{
+			display: flex;
+			margin: 10px auto;
+			justify-content: center;	
+		}
+		button{
+			margin: 5px 15px;
+			background: transparent;
+			color: white;
+			cursor: pointer;
+			transition: all 0.7s ease;
+		}
+		.fb:hover{
+			background:  blue;
+		}
+		.gl:hover{
+			background: darkred;	
+		}
+		p:hover{
+			font-size: 18px;
+			background: dark;
+			margin: 5px;
+			border: none;
+		}
+		a{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="background"></div>
+	<div class="container">
+		<h2>login</h2>
+		<form action="">
+			<div class="formitem">
+				<input type="text" name="user" id="user"placeholder="First name">
+			</div>
+			<div class="formitem">
+				<input type="text" name="user" id="user"placeholder="last name">
+			</div>
+			<div class="formitem">
+				<span class="material-icons outlined"></span>
+				<input type="password" name="pass" id="pass" placeholder="email">
+
+			</div>
+			<div class="formitem">
+				<span class="material-icons outlined"></span>
+				<input type="password" name="pass" id="pass" placeholder="password" class="color">
+
+			</div>
+			<button type="submit">login</button>
+			<p>or login using</p>
+			<div class="options">
+				<button class="fb">facebook</button>
+				<button class="gl">google</button>
+			</div>
+
+			<p>new user?<a href="#">create an account</a></p>
+
+		</form>
+		
+	</div>
+
+</body>
+</html>
